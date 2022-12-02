@@ -9,4 +9,4 @@ print("My thinking capability is not perfect\\") # \\ create single backlash(\)
 
 print("Who are you taking risk in a crictical situation\\\\") #\\\\ create double backlash \\
     
-    
+print("Helloworl\bld")   # \b remove one alphabet from a word. 
