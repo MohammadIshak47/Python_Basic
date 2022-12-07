@@ -1,4 +1,12 @@
 
+'''
+
+###
+def add(a,b):
+    return a+b
+
+print(add(33,44)) 
+
 def sum_num(a,b,c):
     return a+b+c
 
@@ -8,3 +16,6 @@ b = int(input("Enter second number : "))
 c = int(input("Enter third number : "))
 
 print("The result of sum is : ",sum_num(a, b, c))
+
+'''
+   
