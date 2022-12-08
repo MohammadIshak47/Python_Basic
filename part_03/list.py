@@ -66,7 +66,6 @@ numbers = [5,7,2,3,4]
 print(sorted(numbers)) # number sort kora
 print(a)
 
-'''
 
 a = ['apple','banana','orange','mango','banana','pineapple','mango']
 # a.clear() # element clear korte
@@ -74,5 +73,9 @@ a = ['apple','banana','orange','mango','banana','pineapple','mango']
 
 a_copy = a.copy()
 print(a_copy)
+
+'''
+## list_comparison
+
 
 
