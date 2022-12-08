@@ -135,9 +135,6 @@ def is_palindrome(word):
 word = input("Enter any number or word : ")
 print(is_palindrome(word))
 
-
-'''
-
 ## Fibonacci number : 
 
 # 0 1 1 2 3 5 8 13 ..... 
@@ -161,6 +158,32 @@ def Fibonacci_num(number):
 
 number = int(input("Enter any number :  "))
 print(Fibonacci_num(number))
+
+
+## Default Parameter __
+
+def city(a,b,c,d ='Islamabd'): # we can only define last argument value
+    return a, b, c, d 
+
+# print(city("Dhaka", "NewYork", "London", "Islamabad"))
+print(city("Dhaka", "Rajshahi", "Khulna"))
+'''
+
+## scope variable
+
+x = 5 # outside of function variable is called global variable
+
+def func():
+    global x # to change global variable
+    x= 9 #  Inside of function variable Local variable 
+    return x 
+
+print(func())
+print(x)
+
+
+ 
+
 
 
 
