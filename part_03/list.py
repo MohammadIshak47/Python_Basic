@@ -85,6 +85,8 @@ print(name)
 print(age)
 
 '''
+## strings are immutable means not chanageable in python
+# list are mutable means changeable in python
 ## Join Method
 # convert list to string
 user_info = ['Muhammad','33']
