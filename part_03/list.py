@@ -74,8 +74,20 @@ a = ['apple','banana','orange','mango','banana','pineapple','mango']
 a_copy = a.copy()
 print(a_copy)
 
-'''
 ## list_comparison
 
+## Split method 
+# Convert string to list
+
+name, age = input("Enter any name & age : ").split() # To take two variable or input into one line
+
+print(name)
+print(age)
+
+'''
+## Join Method
+# convert list to string
+user_info = ['Muhammad','33']
+print(','.join(user_info)) # join two input in one line
 
 
