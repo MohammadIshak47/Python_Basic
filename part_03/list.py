@@ -84,12 +84,18 @@ name, age = input("Enter any name & age : ").split() # To take two variable or i
 print(name)
 print(age)
 
-'''
 ## strings are immutable means not chanageable in python
 # list are mutable means changeable in python
 ## Join Method
 # convert list to string
 user_info = ['Muhammad','33']
 print(','.join(user_info)) # join two input in one line
+'''
 
+## List in for loop
+
+fruit = ['apple','mango','banana','orange','water melon']
+
+for fruits in fruit:
+    print(fruits)
 
