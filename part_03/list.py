@@ -90,7 +90,6 @@ print(age)
 # convert list to string
 user_info = ['Muhammad','33']
 print(','.join(user_info)) # join two input in one line
-'''
 
 ## List in for loop
 
@@ -98,4 +97,18 @@ fruit = ['apple','mango','banana','orange','water melon']
 
 for fruits in fruit:
     print(fruits)
+
+'''
+
+## List inside list
+
+# matrix = [[1,2,3],[5,6,7],[7,8,9]]
+
+# for sublist in matrix:
+#     # print(matrix)
+#     for i in sublist:
+#         print(i)
+
+
+
 
