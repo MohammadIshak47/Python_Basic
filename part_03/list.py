@@ -98,16 +98,103 @@ fruit = ['apple','mango','banana','orange','water melon']
 for fruits in fruit:
     print(fruits)
 
-'''
-
 ## List inside list
 
-# matrix = [[1,2,3],[5,6,7],[7,8,9]]
+matrix = [[1,2,3],[5,6,7],[7,8,9]]
 
-# for sublist in matrix:
+# for sublist in matrix: ## When list inside list then it is called 2d list
 #     # print(matrix)
 #     for i in sublist:
 #         print(i)
+
+print(matrix[1][1])  
+
+
+# numbsers = list(range(1,12))
+numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,15,14,1,13]
+
+# numbsers.pop()
+# print(numbsers.pop()) # return pop value
+
+# print(numbsers.index(2))
+# print(numbers.index[1,12])
+# print(numbers.index(1,12))
+# print(numbers.index(1,12,14))
+def negative_value(numbers):
+    negative_list=[]
+    for i in numbers:
+        negative_list.append(-i)
+    return negative_list
+
+print(negative_value(numbers))       
+
+
+
+# print(numbsers)
+
+###problem_01: return a list and squre every item
+#solution :
+numbers = [1,2,3,4,5]
+
+def square_list(numbers):
+    square_value_list = []
+    for i in numbers:
+        square_value_list.append(i**2)
+    return square_value_list
+
+print(square_list(numbers))
+
+## problem_02 : Define a function which will take list as an argument & this function
+# will return reversed list
+
+#Solution :
+
+numbers = [1,2,3,4,5,6,7,8]
+
+def reverse_list(numbers):
+    numbers.reverse()
+    return numbers
+print(reverse_list(numbers))   
+
+alternative way :
+numbers = [1,2,3,4,5,6,7,8]
+def reverse_list(numbers):
+    return numbers[::-1]
+
+print(reverse_list(numbers))
+
+
+## another way: user pop & append method
+#    
+
+def reverse_list(numbers):
+    reverse_item= []
+    for i in range(1,len(numbers)+1):
+        popped_list = numbers.pop()
+        reverse_item.append(popped_list)
+    return reverse_item
+numbers = [1,2,3,4,5,6,7]
+print(reverse_list(numbers))
+
+'''
+
+
+## problem_03 : define a function that takes a words of agrument and return list
+# with reverse of every element in that list.
+
+def reverse_every_element(l):
+    reverse_list = []
+    for i in l:
+        reverse_list.append(i[::-1])
+    return reverse_list
+
+list_numbers = ["Dhaka","Khulna","Barisal","Cumilla"]
+print(reverse_every_element(list_numbers))
+
+
+
+
+
 
 
 
