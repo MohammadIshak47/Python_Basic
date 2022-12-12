@@ -176,8 +176,6 @@ def reverse_list(numbers):
 numbers = [1,2,3,4,5,6,7]
 print(reverse_list(numbers))
 
-'''
-
 
 ## problem_03 : define a function that takes a words of agrument and return list
 # with reverse of every element in that list.
@@ -190,6 +188,62 @@ def reverse_every_element(l):
 
 list_numbers = ["Dhaka","Khulna","Barisal","Cumilla"]
 print(reverse_every_element(list_numbers))
+
+
+
+## problem_04 : filter odd_even
+# define a function
+# list input : [1,2,3,4,5,6,7]
+# list ouput : [[1,3,5,7],[2,4,6]]
+
+# Solution :
+
+def filter_odd_even(list_number):
+    odd_num = []
+    even_num = []
+    for i in list_number:
+        if i%2 == 0:
+            even_num.append(i)
+        else:
+            odd_num.append(i)
+    output = [odd_num,even_num] 
+    return output     
+
+
+list_number = [1,2,3,4,5,6,7]
+print(filter_odd_even(list_number)) 
+
+
+'''
+
+## problem_05: Common elements finder function
+# define a function which take 2 lists as input and return a list
+#which contains common elements of both list
+
+# Example:
+# input [1,2,5,7],[1,2,3,6,9]
+# output [1,2]
+# Solution : 
+
+def common_item(list1,list2):
+    output = []
+    for i in list1:
+        if i in list2:
+            output.append(i)
+    return output        
+
+
+
+print(common_item([1,2,5,6],[1,2,3,9]))
+
+
+
+         
+
+
+
+
+
 
 
 
