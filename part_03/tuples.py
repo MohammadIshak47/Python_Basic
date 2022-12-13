@@ -28,6 +28,19 @@ print(color)
 
 '''
 
+## Function return two values 
+
+def func(num1,num2):
+    addition = num1+num2
+    multiplication = num1*num2
+    return addition,multiplication
+
+# print(func(10, 20))
+addition,multiplication = (30,40)
+print(addition)
+print(multiplication)
+
+
 
 
 
