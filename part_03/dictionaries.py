@@ -32,8 +32,40 @@ print(info_of_person['favorite_movies'])
 
 ## How to add data into empty dictionaries
 
-user_info = {}
-user_info['name'] = 'Mohammad Ishak'
-# user_info['gender','id'] = 'male','ab1'
-user_info['qualification'] = 'Hons'
-print(user_info)
+# user_info = {}
+# user_info['name'] = 'Mohammad Ishak'
+# # user_info['gender','id'] = 'male','ab1'
+# user_info['qualification'] = 'Hons'
+# print(user_info)
+
+user_info ={
+    'name':'Ishak',
+    'working place': 'Dhaka',
+    'gender': 'Male'
+}
+
+
+# if 'name' in user_info: # to see key 
+#     print("present")
+# else:
+#     print("Not present")  
+# 
+
+# for i in user_info: ## to see all keys
+#     print(i)
+
+# for i in user_info.values(): ## to see all values
+#     print(i)
+
+##loop in dictionaries
+
+# for i in user_info:
+#     print(user_info[i])
+
+##items methods
+# user_items = user_info.items()
+# print(user_items)
+# print(type(user_items))
+
+for key,value in user_info.items():
+    print(f"the key is {key} and value is {value}")
