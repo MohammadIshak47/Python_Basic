@@ -136,6 +136,24 @@ def cube_finder(n):
     return cubes
 print(cube_finder(5)) 
 
-'''
-       
 
+## Word counter 
+
+def word_counter(word):
+    count = {}
+    for char in word:
+        count[char] = word.count(char)
+    return count
+print(word_counter('bangla'))        
+
+'''
+
+## Store data from user
+
+person_info = {
+    'name':'Ishak',
+    'age':26,
+    'language':'bangla'
+}       
+
+        
