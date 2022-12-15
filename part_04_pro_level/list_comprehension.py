@@ -60,8 +60,6 @@ def reverse_function(list1):
 print(reverse_function(['bangla','english','math','scienc'])) 
 
 
-'''
-
 #### List comprehension with if else statement
 
 numbers = list(range(1,11))
@@ -80,4 +78,42 @@ print([i for i in numbers if i%2!=0])
 print([i for i in range(1,11) if i%2!=0])
 
 
+## problem_01 : Define a function 
+# num to string 
+# Example : input [True,False,[21,32],30,23.2,1]
+### output : [30,23.2,1]
+
+## Solution
+
+def num_to_string(list1):
+    return [str(i) for i in list1 if type(i)==int or type(i)==float]
+
+print(num_to_string([True,False,[21,32],30,23.2,1]))
+
+### List comprehension with if else
+
+# nums = [1,2,3,4,5,6,7,8,9,10]
+
+# new_list = []
+
+# if i in nums:
+#     if i%2==0:
+#         new_list.append(i*2)
+#     else:
+#         new_list.append(-i)
+
+# print(new_list)
+
+### in List comprehension with if else
+
+print([ i*2 if (i%2 == 0) else -i for i in range(1,11)])
+
+### Nested list comprehension 
+## Example : [[1,2,3],[1,2,3],[1,2,3]]
+
+print([[i for i in range(1,4) ] for j in range(3)])
+
+'''
+### Dictionary Comprehension
+# square : {1:1,2:4,3:9}
 
