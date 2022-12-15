@@ -64,6 +64,20 @@ print(reverse_function(['bangla','english','math','scienc']))
 
 #### List comprehension with if else statement
 
+numbers = list(range(1,11))
+# list1 = []
+# for i in numbers:
+#     if i%2 == 0:
+#         list1.append(numbers)
+#print(list1)  
+
+#### List comprehension with if else statement
+#Even numbers
+print([i for i in numbers if i%2==0])
+print([i for i in range(1,11) if i%2==0])
+## odd numbers
+print([i for i in numbers if i%2!=0])
+print([i for i in range(1,11) if i%2!=0])
 
 
 
