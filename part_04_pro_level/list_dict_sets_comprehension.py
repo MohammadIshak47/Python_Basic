@@ -113,7 +113,33 @@ print([ i*2 if (i%2 == 0) else -i for i in range(1,11)])
 
 print([[i for i in range(1,4) ] for j in range(3)])
 
-'''
+
+
 ### Dictionary Comprehension
 # square : {1:1,2:4,3:9}
+# print({num:num**2 for num in range(1,10)})
+# print({f"square of {num} is":num**2 for num in range(1,10)})
+
+square ={f"square of {num} is ":num**2 for num in range(1,10)}
+
+for k,v in square.items(): ## To present items
+
+    print(f"{k} : {v}")
+
+### To count string in Dictionaries
+string = "MohammadIshak"
+print({char:string.count(char) for char in string})
+
+## Dictionary comprehension with if else
+## d = {1:'odd',2:'even'}
+
+print({ i:('even' if i%2==0 else 'odd') for i in range(1,10) })
+
+'''
+
+### Sets comprehension
+
+# print({i**2 for i in range(1,11)})
+names = ['Ishak','Tamim','Irfan','Anas']
+print({ name[0] for name in names})
 
