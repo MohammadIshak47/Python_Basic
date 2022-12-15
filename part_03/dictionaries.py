@@ -146,14 +146,31 @@ def word_counter(word):
     return count
 print(word_counter('bangla'))        
 
-'''
-
 ## Store data from user
 
-person_info = {
-    'name':'Ishak',
-    'age':26,
-    'language':'bangla'
-}       
+# person_info = {
+#     'name':'Ishak',
+#     'age':26,
+#     'language':'bangla',
+#     'favourite_movie':['bangla','power'],
+#     'favourite_songs':['song11','song2']
+# }       
 
-        
+## Solution: 
+user = {}        
+username = input("Enter your name : ")
+user_age = input("Enter your age : ")
+language = input("Enter your language: ")
+favorite_movies = input("Your favourite movies separated by comma ").split(',')
+favourite_songs = input("Your favourite songs separated by comma ").split(',')
+
+user['username'] = username
+user['user_age'] = user_age
+user['language'] = language
+user['favourite_movies'] = favorite_movies
+user['favourite_songs'] = favourite_songs
+
+for key,value in user.items():
+    print(f"{key} : {value}")
+'''
+
