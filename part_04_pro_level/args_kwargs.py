@@ -36,7 +36,6 @@ list1 = [2,3,4]
 # print(multiply_all(list1)) ## it will multiply the list but not with the elements of list
 print(multiply_all(*list1)) # now it will unpack & multiply the elements of list
 
-'''
 
 ## problem : define a function . Input num,iterable(tuple,list) containing numbers as args
 ## Example :  nums = [1,2,3]
@@ -56,3 +55,30 @@ def to_power(num,*args):
 nums = [1,2,3]
 # print(to_power(4,*nums))
 print(to_power(3,*[1,2,4]))
+
+
+
+##### kwargs arguments
+## **kwargs(double star argument)
+## kwargs as a parameter
+
+def func(**kwargs): ## it contains value as a dictionary
+    # print(kwargs)
+    for k,v in kwargs.items():
+        print(f"{k} : {v}")
+
+print(func(first_name = 'Mohammad',last_name = 'Ishak'))
+
+'''
+
+## kwargs as a normal parameter
+
+def func(name,**kwargs):
+    for k,v in kwargs.items():
+        print(f"{k} : {v}")
+
+# print(func('Ishak',sur_name ='Ishak',full_name='Mohammad Ishak'))
+
+## Dictionary unpacking 
+d = {'name':'Muhammad Ishak','age':26}
+func(**d)
