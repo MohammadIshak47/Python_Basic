@@ -69,7 +69,6 @@ def func(**kwargs): ## it contains value as a dictionary
 
 print(func(first_name = 'Mohammad',last_name = 'Ishak'))
 
-'''
 
 ## kwargs as a normal parameter
 
@@ -82,3 +81,31 @@ def func(name,**kwargs):
 ## Dictionary unpacking 
 d = {'name':'Muhammad Ishak','age':26}
 func(**d)
+
+#### parameters order
+## very important to understand
+## PADK_ Parameters,*args,Default parameters,**kwargs
+
+def func(name,*args,last_name='unknown',**kwargs):
+    print(name)
+    print(args)
+    print(last_name)
+    print(kwargs)
+
+func('Mohammad',1,2,3,a=33,b=44)
+
+'''
+
+## Problem: define a function 
+## names = ['Mohammad','Ishak']
+## print(func(names))
+### print(func(names,reverse_str=True))
+
+## Solution
+def func(list1,**kwargs):
+    if kwargs.get("reverse_str") == True:
+        return [name[::-1].title() for name in list1]
+    else:
+        return [name.title() for name in list1]
+names = ['mohammad','ishak','circle']
+print(func(names,reverse_str=True))
