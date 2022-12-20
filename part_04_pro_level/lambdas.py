@@ -20,4 +20,7 @@ print((lambda a: a[-1])("Mohammad")) ## to findout last character of the word
 
 # print((lambda a : True if len(a)>5 else False) ('bangla')) 
 ## without if else
-print((lambda a : len(a)>5) ('bangladeshi'))
+# print((lambda a : len(a)>5) ('bangladeshi'))
+
+
+
