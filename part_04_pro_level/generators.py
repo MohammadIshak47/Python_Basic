@@ -58,10 +58,42 @@ for num in even_num_finder(10): ## if generator will create one times then
     ## we can run loop in only one times
     print(num)    
 
-'''
 
 ### Generator comprehension
 
+# print([i**2 for i in range(1,10)])
+
+## Using generator we can do this term like
+square = (i**2 for i in range(1,10)) ## it has already created generator to use this ()
+
+# print(next(square))
+# print(next(square))
+# print(next(square))
+
+for num in square:
+    print(num)
+'''
 
 
+### List vs generator
+
+### memory usage ,time
+## when should use list , when should use generator
+## time
+import time
+
+# t1 = time.time()
+# list1 = [i**2 for i in range(10000000)] ## 10 million enough time to run
+# # t2 = time.time()
+# # print(t2 - t1)
+# print(time.time()-t1)
+
+
+t1 = time.time()
+generator = (i**2 for i in range(10000000)) ## 10 million tiny time to execute
+print(time.time()-t1)
         
+### when we need to use generator num again and again and run loop multi times
+## like todo list then we need to use list
+
+### we don't want to execute or run loop multi times then we need to use generator
