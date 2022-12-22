@@ -157,7 +157,66 @@ def square_finder(n):
     return ([i**2 for i in range(1,n+1)])
 
 square_finder(1000)
+
+
+### check datatype then take input
+
+from functools import wraps
+def only_int_allow(function):
+    @wraps(function)
+    def wrapper_function(*args,**kwargs):
+        if all([type(arg) == int for arg in args]):
+            return function(*args,**kwargs)
+        else:
+            return "Invalid arguments"
+    return wrapper_function            
+
+    #     data_types = []
+    #     for arg in args:
+    #         data_types.append(type(arg) == int)
+    #     if all(data_types):
+    #         return function(*args,**kwargs)
+    #     else:
+    #         return "Invalid functions"
+    # return wrapper_function
+
+
+@only_int_allow
+def add_all(*args):
+    total = 0
+    for i in args:
+        total+= i
+    return total
+
+
+print(add_all(1,2,3,4,5,[1,2,3],'Ishak'))
+
 '''
+
+#### Decorates with argument( integer datatype access without error)
+from functools import wraps
+def only_datatypes_allow(data_types):
+    def decoratores(function):
+        @wraps(function)
+        def wrapper_function(*args,**kwargs):
+            if all([type(arg) == data_types for arg in args]):
+                return function(*args,**kwargs)
+            return "Invalid function"
+        return wrapper_function
+    return decoratores
+
+
+@only_datatypes_allow(str)
+def string_join(*args):
+    string = ''
+    for i in args:
+        string+=i
+    return string
+
+# print(string_join('Mohammad ', 'Ishak'))
+print(string_join('Motherland ', 'Bangladesh',5))
+
+
 
 
 
