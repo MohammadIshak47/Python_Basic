@@ -1,4 +1,5 @@
 
+'''
 ### Decorators
 
 # def square(*a):
@@ -23,5 +24,9 @@ def square_define(func,l):
         new_list.append(func(item))
     return new_list
 
+print(square_define(lambda a : a**2,l))
 
+print( [i for i in range(1,6) if i**2])
+
+'''
 
