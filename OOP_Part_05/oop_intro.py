@@ -6,9 +6,10 @@
 ## How to create object
 
 class Person: ## We create class because we want to create our own object by using class
-    ### here __init_ is a construtor
+    ### here __init_ is a construtor . We write init method to create object
     def __init__(self,first_name,last_name,age): ## here first_name,last_name,age
-        ## are attributes. We can write person_instance or anything instead of self
+        ## are attributes. Attributes or parameters are also known as argument
+        #  We can write person_instance or anything instead of self
         ## but according to convention we have to write here self
         self.first_name = first_name ## self.first_name is an instance variable
         self.last_name = last_name ## we can write person_last_name  = last_name 
@@ -18,6 +19,7 @@ class Person: ## We create class because we want to create our own object by usi
 
 
 p1 = Person('Muhammad', 'Ishak', 26) ## here self is replaced by p1  & p1 is an object
+## self represent object like p1
 p2 = Person('Irfan', 'Ahmed', 4) ## when we create object then init method is called
 
 print(p1.first_name,p1.last_name)
