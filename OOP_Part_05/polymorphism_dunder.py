@@ -1,3 +1,4 @@
+'''
 ### Special magic methods/dunder methods (__init__) before and after double underscore
 ## is called dunder/magic methods
 ### operator overloading
@@ -65,3 +66,20 @@ print(phone1/phone2)
 
 print(len(phone1)) ## here by using len method we can get phone1 object len
 print(len(phone2)) ### & aslo get phone2 object len .This is Polymorphism 
+
+'''
+
+class Phone:
+
+    def assign_color(self,color):
+        self.color = color
+    def assign_cost(self,cost):
+        self.cost = cost
+    def show_color(self):
+        return self.color
+    def show_cost(self):
+        return self.cost
+
+p1 = Phone()
+p1.assign_color('red')
+print(p1.show_color())
