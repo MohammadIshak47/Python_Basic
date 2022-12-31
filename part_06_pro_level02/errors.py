@@ -64,9 +64,6 @@ print(add(2, 'bangla'))
 
 
 
-
-"""
-
 #Raise errors example_01
 ### NotImplementedError
 # Abstract method
@@ -83,9 +80,21 @@ class Dog(Animal):
     def __init__(self, name,breed):
         super().__init__(name)
         self.name = name
+    def sound(self):
+        return "ghew ghew"    
 
 class Cat(Animal):
     def __init__(self, name,breed):
         super().__init__(name)
-        self.breed = breed        
+        self.breed = breed 
+    def sound(self):
+        return "Meou Meou"  
+
+
+dogg = Dog('pet', 'giant')
+catt  = Cat('cats', 'nel')
+
+"""
+
+
 
