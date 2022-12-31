@@ -236,6 +236,28 @@ def common_item(list1,list2):
 
 print(common_item([1,2,5,6],[1,2,3,9]))
 
+#### list
+# print(complex(3,5)) # here 3 is real number and 5 is imaginary number and 5j is 
+## complex number .
+
+# l = [1,2,'ishak','learn','english','math']
+# print(l[::2]) ## here it will first take 1 then ishak and finally it will take english
+
+# a = list('bangladesh') ## it will separted all the values in list wise
+# print(a)
+
+
+###
+# l  = [1,2,3,4]
+# one,*other = l
+# print(one) ## here it will print just first value 1 
+# print(other) ## here it will print other value like 2,3,4
+
+
+# a = [1,2,3,34]
+# print(sum(a))
+# print(sum(a)/len(a))
+
 
 
          

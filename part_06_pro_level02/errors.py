@@ -95,6 +95,3 @@ dogg = Dog('pet', 'giant')
 catt  = Cat('cats', 'nel')
 
 """
-
-
-
